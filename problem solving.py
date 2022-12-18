@@ -182,15 +182,14 @@
 # print(stringSimilarity('ababaa'))
 
 
-def gradingStudents(grades):
-    multiples5 = list(map(lambda x: x + 5, range(40, 101)))
-    print(multiples5)
-    for ind in range(0, len(grades)):
-        for i in multiples5:
-            if i > grades[ind] and (i - grades[ind]) < 3:
-                grades[ind] = grades[ind] + (i - grades[ind])
+# new
+grades = [32,65,98,74,14,25,69,98, 15, 30, 70]
+grades_sort = grades.sort()
+print(sorted(grades))
+print(grades)
 
-
-    return grades
-grades = [32,65,98,74,14,25,69,98]
-print(gradingStudents(grades))
+# 2nd
+# inline if
+x = True
+x = True if len(grades) > 10 else False
+print(x)
