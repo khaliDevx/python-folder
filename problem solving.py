@@ -183,7 +183,13 @@
 
 
 # new
-grades = [32,65,98,74,14,25,69,98]
+grades = [32,65,98,74,14,25,69,98, 15, 30, 70]
 grades_sort = grades.sort()
 print(sorted(grades))
 print(grades)
+
+# 2nd
+# inline if
+x = True
+x = True if len(grades) > 10 else False
+print(x)
